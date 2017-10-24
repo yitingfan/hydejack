@@ -1,0 +1,42 @@
+{
+  "lang": "en",
+  "name": "Hydejack",
+  "short_name": "Hydejack",
+  "description": "A Jekyll theme with JavaScript Powers. “Best Theme by a Mile”. Combines the best of static sites and modern web apps.",
+  "start_url": "/hydejack/?utm_source=homescreen",
+  "theme_color": "#4fb1ba",
+  "background_color": "#fff",
+  "orientation": "portrait",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/hydejack/assets/icons/icon@0,25x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/hydejack/assets/icons/icon@0,5x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/hydejack/assets/icons/icon@0,75x.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/hydejack/assets/icons/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/hydejack/assets/icons/icon@2x.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/hydejack/assets/icons/icon@3x.png",
+      "type": "image/png",
+      "sizes": "576x576"
+    }
+  ]}
