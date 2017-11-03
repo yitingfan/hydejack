@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://qwtel.com/hydejack/feed.xml" rel="self" type="application/atom+xml" /><link href="https://qwtel.com/hydejack/" rel="alternate" type="text/html" hreflang="en" /><updated>2017-11-02T16:59:21+01:00</updated><id>https://qwtel.com/hydejack/</id><title type="html">Hydejack</title><subtitle>A Jekyll theme with JavaScript powers. &quot;Best Theme by a Mile&quot;. Combines the best of static sites and modern web apps.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://qwtel.com/hydejack/feed.xml" rel="self" type="application/atom+xml" /><link href="https://qwtel.com/hydejack/" rel="alternate" type="text/html" hreflang="en" /><updated>2017-11-03T11:43:30+01:00</updated><id>https://qwtel.com/hydejack/</id><title type="html">Hydejack</title><subtitle>A Jekyll theme with JavaScript powers. &quot;Best Theme by a Mile&quot;. Combines the best of static sites and modern web apps.
 </subtitle><author><name>Florian Klampfer</name><email>mail@qwtel.com</email></author><entry><title type="html">Better Gem Support (v6.5)</title><link href="https://qwtel.com/hydejack/2017/07/27/better-gem-support/" rel="alternate" type="text/html" title="Better Gem Support (v6.5)" /><published>2017-07-27T00:00:00+02:00</published><updated>2017-07-27T00:00:00+02:00</updated><id>https://qwtel.com/hydejack/2017/07/27/better-gem-support</id><content type="html" xml:base="https://qwtel.com/hydejack/2017/07/27/better-gem-support/">&lt;p&gt;This maintenance release includes various quality-of-life improvements,
 especially when using the gem-based version of the theme.
 These changes come in handy when using Hydejack for a quick (project-) page:
@@ -45,7 +45,7 @@ Also, a mini-version of &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/so
   &lt;span class=&quot;na&quot;&gt;social&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;na&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://github.com/qwtel/hydejack&lt;/span&gt;
     &lt;span class=&quot;na&quot;&gt;npm&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://www.npmjs.com/package/hydejack&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;download&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://github.com/qwtel/hydejack/archive/v7.1.0.zip&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;download&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://github.com/qwtel/hydejack/archive/v7.1.1.zip&lt;/span&gt;
 
 &lt;span class=&quot;na&quot;&gt;data_social&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
@@ -111,7 +111,7 @@ If you have a &lt;code class=&quot;highlighter-rouge&quot;&gt;font&lt;/code&gt; 
 making it easier for users to navigate through your collection and discover other projects.
 Also, it’s now possible to display larger (data-) tables that were previously cut off (especially on mobile devices).&lt;/p&gt;
 
-&lt;p&gt;For more on how to add tables, see the new section in &lt;a href=&quot;/hydejack/docs/7.1.0/writing/&quot;&gt;docs/writing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For more on how to add tables, see the new section in &lt;a href=&quot;/hydejack/docs/7.1.1/writing/&quot;&gt;docs/writing&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Smaller changes include a reduced usage of horizontal lines and a more “semantic” use of &lt;code class=&quot;highlighter-rouge&quot;&gt;hr&lt;/code&gt; elements.
 Specifically, the semantics of the resume layout have been improved.
@@ -170,7 +170,7 @@ Compression
 &lt;ul&gt;
   &lt;li&gt;Added “Other Projects” section to the bottom of the project layout (similar to “Related Posts”)&lt;/li&gt;
   &lt;li&gt;Added CSS classes that make viewing larger (data-) tables possible&lt;/li&gt;
-  &lt;li&gt;Added section on tables to &lt;a href=&quot;/hydejack/docs/7.1.0/writing/&quot;&gt;docs/writing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Added section on tables to &lt;a href=&quot;/hydejack/docs/7.1.1/writing/&quot;&gt;docs/writing&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Reduced use of &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;hr/&amp;gt;&lt;/code&gt; elements, using CSS borders instead.&lt;/li&gt;
   &lt;li&gt;Improved semantic HTML of resume&lt;/li&gt;
   &lt;li&gt;Follow favicon best practices and include example icons&lt;/li&gt;
@@ -248,7 +248,7 @@ Maybe you won’t even notice the difference.&lt;/p&gt;
   &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;disable_push_state&lt;/code&gt; option to &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;disable_drawer&lt;/code&gt; option to &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Rename syntax highlighting file to &lt;code class=&quot;highlighter-rouge&quot;&gt;syntax.scss&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Added &lt;a href=&quot;/hydejack/docs/7.1.0/scripts/&quot;&gt;chapter on third party scripts&lt;/a&gt; to documentation&lt;/li&gt;
+  &lt;li&gt;Added &lt;a href=&quot;/hydejack/docs/7.1.1/scripts/&quot;&gt;chapter on third party scripts&lt;/a&gt; to documentation&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;design&quot;&gt;Design&lt;/h3&gt;
@@ -285,14 +285,14 @@ At the same time, the &lt;abbr title=&quot;Flash of Unstyled Content&quot;&gt;FO
   &lt;li&gt;Added &lt;code class=&quot;highlighter-rouge&quot;&gt;redirect&lt;/code&gt; layout&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;See the &lt;a href=&quot;/hydejack/docs/7.1.0/upgrade/&quot;&gt;the migration guide&lt;/a&gt; for instructions on how to upgrade.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&quot;/hydejack/docs/7.1.1/upgrade/&quot;&gt;the migration guide&lt;/a&gt; for instructions on how to upgrade.&lt;/p&gt;
 
 &lt;h2 id=&quot;minor&quot;&gt;Minor&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;The “accent” font (heading font) is now used for all headings.
 This gives the theme a “bolder” look and was necessary for the animation: link =&amp;gt; heading.&lt;/li&gt;
   &lt;li&gt;Changed default text font from “PT Serif” to “Noto Serif”.&lt;/li&gt;
-  &lt;li&gt;Added &lt;a href=&quot;/hydejack/docs/7.1.0/writing/&quot;&gt;CSS classes&lt;/a&gt; for styling markdown content.&lt;/li&gt;
+  &lt;li&gt;Added &lt;a href=&quot;/hydejack/docs/7.1.1/writing/&quot;&gt;CSS classes&lt;/a&gt; for styling markdown content.&lt;/li&gt;
   &lt;li&gt;Links have a new style.
 They now always display an underline to make the choice of the link color less critical (darker colors were hard to
 distinguish from regular text).&lt;/li&gt;
@@ -319,12 +319,12 @@ distinguish from regular text).&lt;/li&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/qwtel/hydejack/releases/tag/v7.1.0&quot;&gt;Get &lt;em&gt;JavaScripten&lt;/em&gt; on GitHub&lt;/a&gt;&lt;/p&gt;</content><author><name>Florian Klampfer</name><email>mail@qwtel.com</email></author><category term="hydejack" /><summary type="html">Hydejack has always featured a JavaScript-heavy sidebar, but other than that, JS has been used sparingly. This changes with this release, which adds a ton of (optional) code that changes the feel of the theme dramatically.</summary></entry><entry><title type="html">The Fast One (v5)</title><link href="https://qwtel.com/hydejack/2016/09/17/the-fast-one/" rel="alternate" type="text/html" title="The Fast One (v5)" /><published>2016-09-17T00:00:00+02:00</published><updated>2016-09-17T00:00:00+02:00</updated><id>https://qwtel.com/hydejack/2016/09/17/the-fast-one</id><content type="html" xml:base="https://qwtel.com/hydejack/2016/09/17/the-fast-one/">&lt;p&gt;This major release increases page load speed dramatically.
+&lt;p&gt;&lt;a href=&quot;https://github.com/qwtel/hydejack/releases/tag/v7.1.1&quot;&gt;Get &lt;em&gt;JavaScripten&lt;/em&gt; on GitHub&lt;/a&gt;&lt;/p&gt;</content><author><name>Florian Klampfer</name><email>mail@qwtel.com</email></author><category term="hydejack" /><summary type="html">Hydejack has always featured a JavaScript-heavy sidebar, but other than that, JS has been used sparingly. This changes with this release, which adds a ton of (optional) code that changes the feel of the theme dramatically.</summary></entry><entry><title type="html">The Fast One (v5)</title><link href="https://qwtel.com/hydejack/2016/09/17/the-fast-one/" rel="alternate" type="text/html" title="The Fast One (v5)" /><published>2016-09-17T00:00:00+02:00</published><updated>2016-09-17T00:00:00+02:00</updated><id>https://qwtel.com/hydejack/2016/09/17/the-fast-one</id><content type="html" xml:base="https://qwtel.com/hydejack/2016/09/17/the-fast-one/">&lt;p&gt;This major release increases page load speed dramatically.
 The page now scores roughly 90/100 on &lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fqwtel.com%2Fhydejack%2F&quot;&gt;Google’s PageSpeed Insights&lt;/a&gt; (up from ~50) and
 has a high score on similar tools.&lt;/p&gt;
 
 &lt;p class=&quot;message&quot;&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This post is outdated and only included for legacy reasons.
-See the &lt;a href=&quot;/hydejack/docs/7.1.0/&quot; class=&quot;heading flip-title&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
+See the &lt;a href=&quot;/hydejack/docs/7.1.1/&quot; class=&quot;heading flip-title&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
 
 &lt;p&gt;Most importantly, the critical rendering path is no longer blocked by loading styles or scripts,
 meaning the site becomes visible faster.&lt;/p&gt;
@@ -375,7 +375,7 @@ help with loading speed as well (burred images get compressed by JPG much better
 &lt;!--more--&gt;
 
 &lt;p class=&quot;message&quot;&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This post is outdated and only included for legacy reasons.
-See the &lt;a href=&quot;/hydejack/docs/7.1.0/&quot; class=&quot;heading flip-title&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
+See the &lt;a href=&quot;/hydejack/docs/7.1.1/&quot; class=&quot;heading flip-title&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
 
 &lt;h2 id=&quot;new-features&quot;&gt;New features&lt;/h2&gt;
 &lt;ul&gt;
@@ -422,7 +422,7 @@ to contain the unmodified markdown).&lt;/li&gt;
 &lt;!--more--&gt;
 
 &lt;p class=&quot;message&quot;&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This post is outdated and only included for legacy reasons.
-See the &lt;a href=&quot;/hydejack/docs/7.1.0/&quot; class=&quot;heading flip-title&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
+See the &lt;a href=&quot;/hydejack/docs/7.1.1/&quot; class=&quot;heading flip-title&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
 
 &lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
 &lt;p&gt;Hydejack is developed on and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/qwtel/hydejack&quot;&gt;GitHub repository&lt;/a&gt;
@@ -670,7 +670,7 @@ They will appear in the listed order.&lt;/p&gt;
 &lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;</content><author><name>Mark Otto</name></author><category term="hyde" /><summary type="html">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</summary></entry><entry><title type="html">What’s Jekyll?</title><link href="https://qwtel.com/hydejack/2012/02/06/whats-jekyll/" rel="alternate" type="text/html" title="What's Jekyll?" /><published>2012-02-06T00:00:00+01:00</published><updated>2012-02-06T00:00:00+01:00</updated><id>https://qwtel.com/hydejack/2012/02/06/whats-jekyll</id><content type="html" xml:base="https://qwtel.com/hydejack/2012/02/06/whats-jekyll/">&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
 
 &lt;p class=&quot;message&quot;&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This post is outdated and only included for legacy reasons.
-See the &lt;a href=&quot;/hydejack/docs/7.1.0/&quot; class=&quot;heading flip-title&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
+See the &lt;a href=&quot;/hydejack/docs/7.1.1/&quot; class=&quot;heading flip-title&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
