@@ -1,1 +1,1 @@
-Sitemap: http://0.0.0.0:4000/hydejack/sitemap.xml
+Sitemap: https://qwtel.com/hydejack/sitemap.xml
