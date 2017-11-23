@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://qwtel.com/hydejack/tag/hyde/</loc>
-<lastmod>2017-11-20T10:49:10+01:00</lastmod>
+<lastmod>2017-11-23T09:00:02+01:00</lastmod>
 </url>
 <url>
 <loc>https://qwtel.com/hydejack/tag/hydejack/</loc>
-<lastmod>2017-11-20T10:49:10+01:00</lastmod>
+<lastmod>2017-11-23T09:00:02+01:00</lastmod>
 </url>
 <url>
 <loc>https://qwtel.com/hydejack/2012/02/06/whats-jekyll/</loc>
@@ -49,8 +49,12 @@
 <lastmod>2017-07-27T00:00:00+02:00</lastmod>
 </url>
 <url>
-<loc>https://qwtel.com/hydejack/2017/11/17/whats-new-in-v7/</loc>
+<loc>https://qwtel.com/hydejack/2017/11/17/hydejacks-new-design/</loc>
 <lastmod>2017-11-17T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>https://qwtel.com/hydejack/2017/11/23/example-content/</loc>
+<lastmod>2017-11-23T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>https://qwtel.com/hydejack/projects/solid-brown/</loc>
