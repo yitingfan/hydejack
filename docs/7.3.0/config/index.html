@@ -139,7 +139,7 @@ Powered by Hydejack v7.3.0 <https://qwtel.com/hydejack/>
 
 <span class="c1"># IMPORTANT: Set The "base URL" of your site.</span>
 <span class="c1">#</span>
-<span class="c1"># When hosting your site in a subdirectory of a server, set to /&lt;name of the subdirectory&gt;</span>
+<span class="c1"># When hosting your site in a subdirectory of a server, set to /&lt;name of directory&gt;</span>
 <span class="c1"># (with leading /, but without the &lt; &gt;)</span>
 <span class="c1"># Use the empty string '' otherwise.</span>
 <span class="c1">#</span>
@@ -162,15 +162,15 @@ Powered by Hydejack v7.3.0 <https://qwtel.com/hydejack/>
   <span class="no">Combines the best of static sites and modern web apps.</span>
   <span class="no">Open `_config.yml` to edit this text.</span>
 
-<span class="c1"># A shorter description for the sidebar.</span>
+<span class="c1"># A shorter description for the sidebar (optional).</span>
 <span class="na">tagline</span><span class="pi">:</span>               <span class="pi">&gt;</span>
   <span class="no">A Jekyll theme with JavaScript powers.</span>
   <span class="no">Open `_config.yml` to edit this text.</span>
 
-<span class="c1"># A list of keywords for your blog</span>
+<span class="c1"># A list of keywords for your blog (optional).</span>
 <span class="na">keywords</span><span class="pi">:</span>              <span class="pi">[]</span>
 
-<span class="c1"># Used by jekyll-seo-tag...</span>
+<span class="c1"># Used by jekyll-seo-tag (optional).</span>
 <span class="na">logo</span><span class="pi">:</span>                  <span class="s">/assets/icons/icon.png</span>
 
 <span class="c1"># This should be the same author as first entry in `_data/authors.yml`.</span>
@@ -189,10 +189,15 @@ Powered by Hydejack v7.3.0 <https://qwtel.com/hydejack/>
 
 <span class="c1"># Pagination configuration (used by the `blog` layout)</span>
 <span class="na">paginate</span><span class="pi">:</span>              <span class="s">5</span>
-<span class="na">paginate_path</span><span class="pi">:</span>         <span class="s">/blog/page-:num/</span>
+<span class="na">paginate_path</span><span class="pi">:</span>         <span class="s">/page-:num/</span>
+
 
 <span class="c1"># Customizaton</span>
 <span class="c1"># ========================================================================================</span>
+
+<span class="c1"># Sidebar image and theme color of the site.</span>
+<span class="na">accent_image</span><span class="pi">:</span>          <span class="s">/assets/img/sidebar-bg.jpg</span>
+<span class="na">accent_color</span><span class="pi">:</span>          <span class="s1">'</span><span class="s">#4fb1ba'</span>
 
 <span class="c1"># The string encoding which fonts to fetch from Google Fonts.</span>
 <span class="c1"># See: &lt;https://qwtel.com/hydejack/docs/configuration/&gt;</span>
@@ -204,10 +209,6 @@ Powered by Hydejack v7.3.0 <https://qwtel.com/hydejack/>
 <span class="c1"># The font used for headings. Expects a string that is a valid CSS font-family value.</span>
 <span class="na">font_heading</span><span class="pi">:</span>          <span class="s">Roboto Slab, Helvetica, Arial, sans-serif</span>
 
-<span class="c1"># Sidebar image and theme color of the site.</span>
-<span class="na">accent_image</span><span class="pi">:</span>          <span class="s">/assets/img/sidebar-bg.jpg</span>
-<span class="na">accent_color</span><span class="pi">:</span>          <span class="s1">'</span><span class="s">#4fb1ba'</span>
-
 <span class="c1"># 3rd Party Integrations</span>
 <span class="c1"># ----------------------------------------------------------------------------------------</span>
 
@@ -215,20 +216,22 @@ Powered by Hydejack v7.3.0 <https://qwtel.com/hydejack/>
 <span class="c1"># pages with `comments: true` in the front matter.</span>
 <span class="c1"># disqus:                &lt;disqus_shortname&gt;</span>
 
-<span class="c1"># Setting a tinyletter username will enable the newsletter subscription box.</span>
-<span class="c1"># tinyletter:            &lt;tinyletter_username&gt;</span>
-
 <span class="c1"># Set your Google Analytics id to receive `pageview` events.</span>
 <span class="c1"># To remove Google Anaylics from your page, remove the line below.</span>
 <span class="c1"># google_analytics:      UA-XXXXXXXX-X</span>
 
+<span class="c1"># Setting a tinyletter username will enable the newsletter subscription box.</span>
+<span class="c1"># PRO version only!</span>
+<span class="c1"># tinyletter:            &lt;tinyletter_username&gt;</span>
 
-<span class="c1"># Hydejack Flags</span>
+
+<span class="c1"># Hydejack Settings</span>
 <span class="c1"># ----------------------------------------------------------------------------------------</span>
+<span class="c1"># These settings are specific to Hydejack.</span>
 
 <span class="na">hydejack</span><span class="pi">:</span>
   <span class="c1"># Configure the order of complementary content on blog posts</span>
-  <span class="na">post_addons</span><span class="pi">:</span>         <span class="pi">[</span><span class="nv">about</span><span class="pi">,</span> <span class="nv">newsletter</span><span class="pi">,</span> <span class="nv">related</span><span class="pi">,</span> <span class="nv">random</span><span class="pi">]</span>
+  <span class="na">post_addons</span><span class="pi">:</span>         <span class="pi">[</span><span class="nv">about</span><span class="pi">,</span> <span class="nv">newsletter</span><span class="pi">,</span> <span class="nv">related</span><span class="pi">]</span>
 
   <span class="c1"># Configure the order of complementary content on project pages</span>
   <span class="na">project_addons</span><span class="pi">:</span>      <span class="pi">[</span><span class="nv">about</span><span class="pi">,</span> <span class="nv">newsletter</span><span class="pi">,</span> <span class="nv">other</span><span class="pi">]</span>
@@ -289,11 +292,6 @@ Powered by Hydejack v7.3.0 <https://qwtel.com/hydejack/>
   <span class="pi">-</span> <span class="s">vendor</span>
   <span class="pi">-</span> <span class="s">Gemfile</span>
   <span class="pi">-</span> <span class="s">Gemfile.lock</span>
-  <span class="pi">-</span> <span class="s">node_modules</span>
-  <span class="pi">-</span> <span class="s">package.json</span>
-  <span class="pi">-</span> <span class="s">package-lock.json</span>
-<span class="na">include</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s">LICENSE.md</span>
 
 
 <span class="c1"># Plugins and Plugin Configuration</span>
@@ -317,8 +315,9 @@ Powered by Hydejack v7.3.0 <https://qwtel.com/hydejack/>
 <span class="c1"># Theme</span>
 <span class="c1"># ---------------------------------------------------------------------------------------</span>
 
-<span class="c1"># theme: jekyll-theme-hydejack</span>
+<span class="na">theme</span><span class="pi">:</span> <span class="s">jekyll-theme-hydejack</span>
 <span class="c1"># remote_theme: qwtel/hydejack@gem</span>
+
 
 <span class="c1"># SEO Tag</span>
 <span class="c1"># ---------------------------------------------------------------------------------------</span>
@@ -334,7 +333,7 @@ Powered by Hydejack v7.3.0 <https://qwtel.com/hydejack/>
 
 <span class="c1"># Used for Twitter cards</span>
 <span class="c1"># twitter:</span>
-<span class="c1">#   username:            &lt;shortname&gt;</span>
+<span class="c1">#   username:            &lt;twitter handle&gt;</span>
 
 <span class="c1"># Used for Facebook open graph</span>
 <span class="c1"># facebook:</span>
@@ -374,11 +373,9 @@ Powered by Hydejack v7.3.0 <https://qwtel.com/hydejack/>
     <span class="na">preview_as_code</span><span class="pi">:</span>   <span class="no">true</span>
 
 <span class="na">compress_html</span><span class="pi">:</span>
-  <span class="na">comments</span><span class="pi">:</span>            <span class="pi">[</span><span class="s2">"</span><span class="s">&lt;!--</span><span class="nv"> </span><span class="s">"</span><span class="pi">,</span> <span class="s2">"</span><span class="nv"> </span><span class="s">--&gt;"</span><span class="pi">]</span>
+  <span class="na">comments</span><span class="pi">:</span>            <span class="pi">[</span><span class="s1">'</span><span class="s">&lt;!--</span><span class="nv"> </span><span class="s">'</span><span class="pi">,</span> <span class="s1">'</span><span class="nv"> </span><span class="s">--&gt;'</span><span class="pi">]</span>
   <span class="na">clippings</span><span class="pi">:</span>           <span class="s">all</span>
   <span class="na">endings</span><span class="pi">:</span>             <span class="s">all</span>
-  <span class="na">ignore</span><span class="pi">:</span>
-    <span class="na">envs</span><span class="pi">:</span>              <span class="pi">[</span><span class="nv">development</span><span class="pi">]</span>
 
 <span class="na">sass</span><span class="pi">:</span>
   <span class="na">style</span><span class="pi">:</span>               <span class="s">compressed</span>
@@ -387,4 +384,4 @@ Powered by Hydejack v7.3.0 <https://qwtel.com/hydejack/>
 <span class="c1"># so that the location of the feed XML stays the same.</span>
 <span class="c1"># feed:</span>
 <span class="c1">#   path:                atom.xml</span>
-</code></pre></div></div><p class="read-more">Continue with <a href="/hydejack/docs/7.3.0/basics/" class="heading flip-title">Basics</a></article><footer role="contentinfo"><hr/><p><small class="copyright">© 2017 Florian Klampfer<br/>*) Not included in the free version</small><p><small>Powered by <a class="external" href="https://qwtel.com/hydejack/">Hydejack</a> v<span id="_version">7.3.0</span></small><hr class="sr-only"/></footer></main><hy-drawer><header id="_sidebar" class="sidebar" role="banner"><div class="sidebar-bg sidebar-overlay" style="background-color:#4fb1ba;background-image:url(/hydejack/assets/img/sidebar-bg.jpg )"></div><div class="sidebar-sticky"><div class="sidebar-about"><h2 class="h1"><a href="/hydejack/">Hydejack</a></h2><p class=""> A Jekyll theme with JavaScript powers.</div><nav class="sidebar-nav heading" role="navigation"> <span class="sr-only">Navigation:</span><ul><li> <a id="_navigation" href="/hydejack/blog/" class="sidebar-nav-item" > Blog </a><li> <a href="/hydejack/variations/" class="sidebar-nav-item" > Variations* </a><li> <a href="/hydejack/resume/" class="sidebar-nav-item" > Résumé* </a><li> <a href="/hydejack/docs/7.3.0/" class="sidebar-nav-item active" > Documentation </a><li> <a href="/hydejack/download/" class="sidebar-nav-item" > Download </a></ul></nav><div class="sidebar-social"> <span class="sr-only">Social:</span><ul><li> <a href="https://twitter.com/qwtel" title="Twitter" class="no-mark-external"> <span class="icon-twitter"></span> <span class="sr-only">Twitter</span> </a><li> <a href="https://github.com/qwtel/hydejack/" title="GitHub" class="no-mark-external"> <span class="icon-github"></span> <span class="sr-only">GitHub</span> </a><li> <a href="mailto:mail@qwtel.com" title="Email" class="no-mark-external"> <span class="icon-mail"></span> <span class="sr-only">Email</span> </a></ul></div></div></header></hy-drawer> </hy-push-state> <script> window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date; ga('create', 'UA-84025722-2', 'auto'); ga('send', 'pageview'); loadJSDeferred('https://www.google-analytics.com/analytics.js'); </script> <!--[if gt IE 9]><!----> <script>loadJSDeferred('/hydejack/assets/js/hydejack-7.3.0.js');</script> <script> document.getElementsByTagName('hy-push-state')[0].addEventListener('hy-push-state-load', function (e) { function e(e){ (console.error?console.error:console.log).call(console,e) } function t(e){ return l.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',l.childNodes[0].getAttribute("href") } function r(e,t){ var r=e.substr(t,2);return parseInt(r,16) } function n(e,n){ for(var o="",c=r(e,n),a=n+2;a<e.length;a+=2){ var l=r(e,a)^c; o+=String.fromCharCode(l) } return t(o) } var o="/cdn-cgi/l/email-protection#", c=".__cf_email__", a="data-cfemail", l=document.createElement("div"); !function(){ for(var t=document.getElementsByTagName("a"),r=0;r<t.length;r++) try{ var c=t[r],a=c.href.indexOf(o); a>-1&&(c.href="mailto:"+n(c.href,a+o.length)) }catch(t){ e(t) } }(), function(){ for(var t=document.querySelectorAll(c),r=0;r<t.length;r++) try{ var o=t[r],l=n(o.getAttribute(a),0),i=document.createTextNode(l); o.parentNode.replaceChild(i,o) }catch(t){ e(t) } }() }); </script> <!--<![endif]--><hr class="sr-only"/><h2 class="sr-only">Templates (for web app):</h2><template id="_animation-template"><div class="animation-main fixed-top"><div class="content"><div class="page"></div></div></div></template> <template id="_loading-template"><div class="loading"> <span class="sr-only">Loading…</span> <span class="icon-cog"></span></div></template> <template id="_error-template"><div class="page"><h1 class="page-title">Error</h1><p class="lead"> Sorry, an error occurred while loading <a class="this-link" href=""></a>.</div></template> <template id="_back-template"> <a id="_back" class="back nav-btn no-hover"> <span class="sr-only">Back</span> <span class="icon-arrow-left2"></span> </a> </template></html>
+</code></pre></div></div><p class="read-more">Continue with <a href="/hydejack/docs/7.3.0/basics/" class="heading flip-title">Basics</a></article><footer role="contentinfo"><hr/><p><small class="copyright">© 2017 Florian Klampfer<br/>*) Not included in free version</small><p><small>Powered by <a class="external" href="https://qwtel.com/hydejack/">Hydejack</a> v<span id="_version">7.3.0</span></small><hr class="sr-only"/></footer></main><hy-drawer><header id="_sidebar" class="sidebar" role="banner"><div class="sidebar-bg sidebar-overlay" style="background-color:#4fb1ba;background-image:url(/hydejack/assets/img/sidebar-bg.jpg )"></div><div class="sidebar-sticky"><div class="sidebar-about"><h2 class="h1"><a href="/hydejack/">Hydejack</a></h2><p class=""> A Jekyll theme with JavaScript powers.</div><nav class="sidebar-nav heading" role="navigation"> <span class="sr-only">Navigation:</span><ul><li> <a id="_navigation" href="/hydejack/blog/" class="sidebar-nav-item" > Blog </a><li> <a href="/hydejack/variations/" class="sidebar-nav-item" > Variations* </a><li> <a href="/hydejack/resume/" class="sidebar-nav-item" > Résumé* </a><li> <a href="/hydejack/docs/7.3.0/" class="sidebar-nav-item active" > Documentation </a><li> <a href="/hydejack/download/" class="sidebar-nav-item" > Download </a></ul></nav><div class="sidebar-social"> <span class="sr-only">Social:</span><ul><li> <a href="https://twitter.com/qwtel" title="Twitter" class="no-mark-external"> <span class="icon-twitter"></span> <span class="sr-only">Twitter</span> </a><li> <a href="https://github.com/qwtel/hydejack/" title="GitHub" class="no-mark-external"> <span class="icon-github"></span> <span class="sr-only">GitHub</span> </a><li> <a href="mailto:mail@qwtel.com" title="Email" class="no-mark-external"> <span class="icon-mail"></span> <span class="sr-only">Email</span> </a><li> <a href="https://github.com/qwtel/hydejack-starter-kit/archive/master.zip" title="Download" class="no-mark-external"> <span class="icon-box-add"></span> <span class="sr-only">Download</span> </a></ul></div></div></header></hy-drawer> </hy-push-state> <script> window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date; ga('create', 'UA-84025722-2', 'auto'); ga('send', 'pageview'); loadJSDeferred('https://www.google-analytics.com/analytics.js'); </script> <!--[if gt IE 9]><!----> <script>loadJSDeferred('/hydejack/assets/js/hydejack-7.3.0.js');</script> <script> document.getElementsByTagName('hy-push-state')[0].addEventListener('hy-push-state-load', function (e) { function e(e){ (console.error?console.error:console.log).call(console,e) } function t(e){ return l.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',l.childNodes[0].getAttribute("href") } function r(e,t){ var r=e.substr(t,2);return parseInt(r,16) } function n(e,n){ for(var o="",c=r(e,n),a=n+2;a<e.length;a+=2){ var l=r(e,a)^c; o+=String.fromCharCode(l) } return t(o) } var o="/cdn-cgi/l/email-protection#", c=".__cf_email__", a="data-cfemail", l=document.createElement("div"); !function(){ for(var t=document.getElementsByTagName("a"),r=0;r<t.length;r++) try{ var c=t[r],a=c.href.indexOf(o); a>-1&&(c.href="mailto:"+n(c.href,a+o.length)) }catch(t){ e(t) } }(), function(){ for(var t=document.querySelectorAll(c),r=0;r<t.length;r++) try{ var o=t[r],l=n(o.getAttribute(a),0),i=document.createTextNode(l); o.parentNode.replaceChild(i,o) }catch(t){ e(t) } }() }); </script> <!--<![endif]--><hr class="sr-only"/><h2 class="sr-only">Templates (for web app):</h2><template id="_animation-template"><div class="animation-main fixed-top"><div class="content"><div class="page"></div></div></div></template> <template id="_loading-template"><div class="loading"> <span class="sr-only">Loading…</span> <span class="icon-cog"></span></div></template> <template id="_error-template"><div class="page"><h1 class="page-title">Error</h1><p class="lead"> Sorry, an error occurred while loading <a class="this-link" href=""></a>.</div></template> <template id="_back-template"> <a id="_back" class="back nav-btn no-hover"> <span class="sr-only">Back</span> <span class="icon-arrow-left2"></span> </a> </template></html>
