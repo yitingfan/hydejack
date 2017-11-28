@@ -3,16 +3,16 @@
 # Change `author1` to your shortname.
 author1:
   name:              <firstname> <lastname>
-  email:             <mail@domain.tld>
+  email:             <helloworldtxt@163.com>
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  about:               |
+    范怡婷，web 安全工程师
 
-    Open `_data/authors.yml` to edit this text.
+    Open `_data/authors.yml` to edit this text. 
+
+
 
   # This photo will be used in the about section
   picture:
@@ -26,8 +26,8 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         <username>
-    github:          <username>
+    twitter:         <fan1ting>
+    github:          <yitingfan>
     # email:           mailto:<mail@domain.tld>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
