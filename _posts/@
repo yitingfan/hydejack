@@ -1,0 +1,54 @@
+---
+layout: post
+title: Server-Side Request Forgery
+tags: [web 安全]
+---
+跨站请求伪造，ssrf，是一类描述服务器在攻击者的控制下发出请求的漏洞。这篇文章会讲到 ssrf 的影响，如何测试，风险点，修复建议和注意事项。
+
+在深入了解 ssrf 的影响之前，先花时间了解一下这个漏洞本身。它发生在一个在线的应用需要请求外部资源的情况下。比如说，当你在 tweet 上转发这篇文章时候，在 tweet 上就会有来自于这篇文章的图片标题和描述。为了下载这些信息，tweet 服务的向这个页面发送 http 请求并提取出需要的信息。直到最近，tweet 
+上被发现存在 ssrf 漏洞。
+
+这篇文章会解释在什么场景下这构成一个安全问题以及你如何发现这种问题。
+
+### setting up
+
+当你可以使一个服务器对另一个服务器发送一个请求时候，就可能存在 ssrf 漏洞。在这篇文章中，最好在本地建立一个存在 ssrf 漏洞的应用来体验一下找个
+漏洞。我们来假设有一台服务器运行以下 ruby 代码
+
+```ruby
+require 'sinatra'
+require 'open-uri'
+get '/' do
+  format 'RESPONSE: %s', open(params[:url]).read
+end
+
+```
+安装 gem，_gem_ _install_ _sinatra_ ，在本地运行这段代码 _ruby_ _server.rb_ 。此时在服务器就运行在  http://localhost:4567 了。不要在出了本地回环的接口运行这段代码，否则会导致命令执行漏洞。
+
+当有人请求 http://localhost:4567/?url=https://www.baidu.com 时候，open()  函数会去访问百度页面，并且把响应体返回给客户端。 
+
+
+![img](http://p04hnmyh8.bkt.clouddn.com/WechatIMG72.jpeg)
+
+但是，从英特网中访问一个 url 并返回结果并不令人感兴趣也不属于安全漏洞，因为所有人都可以访问这些资源。现在我们花点时间考虑一下 LANs ，大量的英特网都隐藏在路由器和防火墙的后面。路由器使用 NAT 模式在内部 IP 子网和外网之间转发数据。
+
+要解释清楚这种影响，考虑一下，我们刚才用 ruby 代码运行的 web-server 服务器和另外一个 admin-panel 服务器在同一个局域网内。admin-panel 服务器开放 80 端口并且没有认证机制。路由器可以将所有的内部流量转发到外部，在内部服务器之间没有任何防火墙。admin-panel 不能被从外网访问，web-server 可以通过于域名 web-server.com 在外网被访问到。
+
+
+我们可以先访问 web-server，再通过 web-server 访问 admin-panel，admin-panel 就可以返回 http response 给外界。可以把它类比为代理，但是更像滥用外部请求到内部请求的代理。 
+
+### Testing
+现在你基本了解了 ssrf 漏洞，现在研究一下如何测试这个漏洞。在我发现的所有 ssrf 漏洞中，我认为最有用的一点是有一台可以回连的服务器。我喜欢 DigitaklOcean，但是你也可以用一台能够从英特网转发通信量的机器。
+
+我们在 http://web-server.com/4567 上,通过这台服务器 ping 我们的机器来调试 ssrf 问题。首先在本地服务器上用 netcat 监听请求。
+
+```
+hack-box-1 $  nc -l -n -vv -p 8080 -k 
+
+```
+
+
+
+原文：
+
+[https://www.hackerone.com/blog-How-To-Server-Side-Request-Forgery-SSRF](another-page).
